@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5398c9ea-cbd2-4e88-8939-7d8b61eb7903" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/upload-files.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/http-common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/upload-files.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    <list default="true" id="5398c9ea-cbd2-4e88-8939-7d8b61eb7903" name="Default Changelist" comment="initial">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/upload-files.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/upload-files.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/upload-files.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/upload-files.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +59,16 @@
       <option name="presentableId" value="Default" />
       <updated>1609165337343</updated>
       <workItem from="1609165338637" duration="3487000" />
-      <workItem from="1609168878707" duration="5912000" />
+      <workItem from="1609168878707" duration="8709000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1609176853340</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609176853340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,5 +85,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
   </component>
 </project>

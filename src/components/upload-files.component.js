@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import UploadService from "../services/upload-files.service";
+import reportWebVitals from "../reportWebVitals";
 
 export default class UploadFiles extends Component {
     constructor(props) {
@@ -17,13 +18,13 @@ export default class UploadFiles extends Component {
         };
     }
 
-    componentDidMount() {
+    /**componentDidMount() {
         UploadService.getFiles().then((response) => {
             this.setState({
                 fileInfos: response.data,
             });
         });
-    }
+    }**/
 
     selectFile(event) {
         this.setState({
@@ -34,65 +35,34 @@ export default class UploadFiles extends Component {
     upload() {
         let currentFile = this.state.selectedFiles[0];
 
-        this.setState({
-            progress: 0,
-            currentFile: currentFile,
-        });
-
-        UploadService.upload(currentFile, (event) => {
-            this.setState({
-                progress: Math.round((100 * event.loaded) / event.total),
-            });
-        })
+        UploadService.upload(currentFile)
             .then((response) => {
-                this.setState({
-                    message: response.data.message,
-                });
-                return UploadService.getFiles();
-            })
-            .then((files) => {
-                this.setState({
-                    fileInfos: files.data,
-                });
-            })
-            .catch(() => {
+                console.log(response)
+                console.log(response.data)
                 this.setState({
                     progress: 0,
-                    message: "Could not upload the file!",
+                    message: response.data.message,
                     currentFile: undefined,
                 });
             });
-
-        this.setState({
-            selectedFiles: undefined,
-        });
+            /*.catch(() => {
+                this.setState({
+                    progress: 0,
+                    message: "response.data.message",
+                    currentFile: undefined,
+                });
+            });*/
     }
 
     render() {
         const {
             selectedFiles,
-            currentFile,
-            progress,
             message,
-            fileInfos,
         } = this.state;
 
         return (
             <div>
-                {currentFile && (
-                    <div className="progress">
-                        <div
-                            className="progress-bar progress-bar-info progress-bar-striped"
-                            role="progressbar"
-                            aria-valuenow={progress}
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                            style={{ width: progress + "%" }}
-                        >
-                            {progress}%
-                        </div>
-                    </div>
-                )}
+
 
                 <label className="btn btn-default">
                     <input type="file" onChange={this.selectFile} />
@@ -110,17 +80,7 @@ export default class UploadFiles extends Component {
                     {message}
                 </div>
 
-                <div className="card">
-                    <div className="card-header">List of Files</div>
-                    <ul className="list-group list-group-flush">
-                        {fileInfos &&
-                        fileInfos.map((file, index) => (
-                            <li className="list-group-item" key={index}>
-                                <a href={file.url}>{file.name}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+
             </div>
         );
     }
