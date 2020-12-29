@@ -37,8 +37,7 @@ export default class UploadFiles extends Component {
 
         UploadService.upload(currentFile)
             .then((response) => {
-                console.log(response)
-                console.log(response.data)
+                console.log(process.env.REACT_APP_TARGET)
                 this.setState({
                     progress: 0,
                     message: response.data.message,
