@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5398c9ea-cbd2-4e88-8939-7d8b61eb7903" name="Default Changelist" comment="ok">
+    <list default="true" id="5398c9ea-cbd2-4e88-8939-7d8b61eb7903" name="Default Changelist" comment="added ENV VAR">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/upload-files.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/upload-files.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/http-common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/http-common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <workItem from="1609191207148" duration="36000" />
       <workItem from="1609191440000" duration="75000" />
       <workItem from="1609192912907" duration="1362000" />
-      <workItem from="1609239979874" duration="1202000" />
+      <workItem from="1609239979874" duration="1883000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1609176853340</created>
@@ -86,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609179642054</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added ENV VAR">
+      <created>1609241289340</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609241289341</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="added ENV VAR" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ENV VAR" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
